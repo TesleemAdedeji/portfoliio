@@ -1,0 +1,604 @@
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide In From Left */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Slide In From Right */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Slide In From Top */
+@keyframes slideInTop {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide In From Bottom */
+@keyframes slideInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Scale In */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Rotate In */
+@keyframes rotateIn {
+    from {
+        opacity: 0;
+        transform: rotate(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0);
+    }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+/* Glow Animation */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 212, 255, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(0, 212, 255, 0.2);
+    }
+}
+
+/* Float Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Shimmer Animation */
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+/* Type Writer Animation */
+@keyframes typewriter {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* Blink Animation */
+@keyframes blink {
+    0%, 49%, 100% {
+        border-color: var(--primary-color);
+        opacity: 1;
+    }
+    50%, 99% {
+        border-color: transparent;
+        opacity: 0.7;
+    }
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Swing Animation */
+@keyframes swing {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+}
+
+/* Shake Animation */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+/* Rotate Animation */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Gradient Shift Animation */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Border Glow Animation */
+@keyframes borderGlow {
+    0% {
+        box-shadow: inset 0 0 10px rgba(0, 212, 255, 0.2), 0 0 10px rgba(0, 212, 255, 0.2);
+    }
+    50% {
+        box-shadow: inset 0 0 20px rgba(0, 212, 255, 0.4), 0 0 20px rgba(0, 212, 255, 0.4);
+    }
+    100% {
+        box-shadow: inset 0 0 10px rgba(0, 212, 255, 0.2), 0 0 10px rgba(0, 212, 255, 0.2);
+    }
+}
+
+/* Apply Animations to Elements */
+
+/* Hero Content Animation */
+.hero-content {
+    animation: slideInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-title {
+    animation: slideInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.1s backwards;
+}
+
+.hero-subtitle {
+    animation: slideInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s backwards;
+}
+
+.hero-description {
+    animation: slideInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.3s backwards;
+}
+
+.hero-buttons {
+    animation: slideInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.4s backwards;
+}
+
+.social-links {
+    animation: slideInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.5s backwards;
+}
+
+/* Hero Image Animation */
+.hero-image {
+    animation: slideInRight 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.image-placeholder {
+    animation: borderGlow 3s ease-in-out infinite;
+}
+
+/* Typing Animation */
+.typing-text {
+    animation: blink 1s infinite;
+}
+
+/* Skill Cards Animation */
+.skill-card {
+    animation: scaleIn 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    animation-fill-mode: both;
+}
+
+.skill-card:nth-child(1) { animation-delay: 0s; }
+.skill-card:nth-child(2) { animation-delay: 0.1s; }
+.skill-card:nth-child(3) { animation-delay: 0.2s; }
+.skill-card:nth-child(4) { animation-delay: 0.3s; }
+.skill-card:nth-child(5) { animation-delay: 0.4s; }
+.skill-card:nth-child(6) { animation-delay: 0.5s; }
+.skill-card:nth-child(7) { animation-delay: 0.6s; }
+.skill-card:nth-child(8) { animation-delay: 0.7s; }
+
+/* Project Cards Animation */
+.project-card {
+    animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Service Cards Animation */
+.service-card {
+    animation: scaleIn 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    animation-fill-mode: both;
+}
+
+.service-card:nth-child(1) { animation-delay: 0s; }
+.service-card:nth-child(2) { animation-delay: 0.1s; }
+.service-card:nth-child(3) { animation-delay: 0.2s; }
+.service-card:nth-child(4) { animation-delay: 0.3s; }
+
+/* Stat Cards Animation */
+.stat-card {
+    animation: slideInBottom 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    animation-fill-mode: both;
+}
+
+.stat-card:nth-child(1) { animation-delay: 0s; }
+.stat-card:nth-child(2) { animation-delay: 0.1s; }
+.stat-card:nth-child(3) { animation-delay: 0.2s; }
+.stat-card:nth-child(4) { animation-delay: 0.3s; }
+
+/* Timeline Animation */
+.timeline-content {
+    animation: slideInBottom 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timeline-item:nth-child(1) .timeline-content { animation-delay: 0s; }
+.timeline-item:nth-child(2) .timeline-content { animation-delay: 0.1s; }
+.timeline-item:nth-child(3) .timeline-content { animation-delay: 0.2s; }
+.timeline-item:nth-child(4) .timeline-content { animation-delay: 0.3s; }
+.timeline-item:nth-child(5) .timeline-content { animation-delay: 0.4s; }
+
+/* Scroll Indicator Animation */
+.scroll-indicator {
+    animation: float 2s ease-in-out infinite;
+}
+
+/* Button Hover Effects */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* Card Hover Float */
+.skill-card:hover,
+.service-card:hover,
+.project-card:hover,
+.stat-card:hover,
+.info-card:hover {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Social Icon Animation */
+.social-icon {
+    position: relative;
+    overflow: hidden;
+}
+
+.social-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: left 0.3s ease-in-out;
+}
+
+.social-icon:hover::before {
+    left: 100%;
+}
+
+/* Filter Button Animation */
+.filter-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.filter-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(0, 212, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+}
+
+.filter-btn:hover::after,
+.filter-btn.active::after {
+    width: 250px;
+    height: 250px;
+}
+
+/* Navbar Animation */
+.navbar {
+    animation: slideInTop 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Section Animation On Scroll */
+.section-title {
+    animation: slideInTop 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-title::after {
+    animation: scaleIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.3s backwards;
+}
+
+/* Info Card Animation */
+.info-card {
+    animation: slideInLeft 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    animation-fill-mode: both;
+}
+
+.info-card:nth-child(1) { animation-delay: 0s; }
+.info-card:nth-child(2) { animation-delay: 0.1s; }
+.info-card:nth-child(3) { animation-delay: 0.2s; }
+.info-card:nth-child(4) { animation-delay: 0.3s; }
+
+/* Contact Form Animation */
+.contact-form {
+    animation: slideInRight 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Form Input Animation */
+.form-input {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus {
+    animation: pulse 1s ease-in-out;
+}
+
+/* Testimonial Card Animation */
+.testimonial-card {
+    animation: fadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Carousel Button Animation */
+.carousel-btn {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.carousel-btn:active {
+    animation: bounce 0.3s ease-in-out;
+}
+
+/* Footer Animation */
+.footer {
+    animation: slideInBottom 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Scroll To Top Animation */
+.scroll-to-top {
+    animation: slideInRight 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-to-top:active {
+    animation: scaleIn 0.2s ease-in-out;
+}
+
+/* Link Underline Animation */
+a {
+    position: relative;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+/* Fade In On Scroll */
+.fade-in-on-scroll {
+    opacity: 0;
+    animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Slide In On Scroll */
+.slide-in-on-scroll {
+    opacity: 0;
+    animation: slideInBottom 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Scale In On Scroll */
+.scale-in-on-scroll {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: scaleIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Glow Effect */
+.glow-effect {
+    animation: glow 2s ease-in-out infinite;
+}
+
+/* Pulse Effect */
+.pulse-effect {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* Shimmer Effect */
+.shimmer-effect {
+    background: linear-gradient(
+        90deg,
+        rgba(0, 212, 255, 0.1) 25%,
+        rgba(0, 212, 255, 0.2) 50%,
+        rgba(0, 212, 255, 0.1) 75%
+    );
+    background-size: 1000px 100%;
+    animation: shimmer 2s infinite;
+}
+
+/* Rotate Icon Animation */
+.rotate-icon {
+    animation: rotate 20s linear infinite;
+}
+
+/* Bounce Icon Animation */
+.bounce-icon {
+    animation: bounce 1s ease-in-out infinite;
+}
+
+/* Swing Icon Animation */
+.swing-icon {
+    animation: swing 1s ease-in-out infinite;
+}
+
+/* Shake Animation */
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Success Animation */
+@keyframes successPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.success-animation {
+    animation: successPulse 0.6s ease-in-out;
+}
+
+/* Error Animation */
+@keyframes errorShake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10px);
+    }
+    75% {
+        transform: translateX(10px);
+    }
+}
+
+.error-animation {
+    animation: errorShake 0.5s ease-in-out;
+}
+
+/* Loading Dots Animation */
+@keyframes loadingDots {
+    0%, 20%, 50%, 80%, 100% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0.3;
+    }
+    60% {
+        opacity: 0.5;
+    }
+}
+
+.dot-animation span:nth-child(1) {
+    animation: loadingDots 1.4s infinite;
+}
+
+.dot-animation span:nth-child(2) {
+    animation: loadingDots 1.4s infinite 0.2s;
+}
+
+.dot-animation span:nth-child(3) {
+    animation: loadingDots 1.4s infinite 0.4s;
+}
